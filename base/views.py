@@ -126,6 +126,9 @@ def createRoom(request):
     context = {'form':form,'topics': topics}
     return render(request,'base/room_form.html',context)
 
+def landing(request):
+    return render(request, 'base/landing.html')
+
 
 @login_required(login_url='login')
 def updateRoom(request, pk):

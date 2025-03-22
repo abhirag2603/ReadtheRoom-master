@@ -11,7 +11,7 @@
   --color-light-gray: #9e9e9e; /* Light Gray */   
   --color-bg: #121212; /* Dark Background (Batcave) */
   --color-success: #5dd693; /* Success Green */
-  --color-error: #fc4b0b; /* Error Red */
+  --color-error: #fc4b0b; /* Error Red */ 
 }
 
 /*========== base styles ==========*/
@@ -759,15 +759,17 @@ a {
 .activities__boxHeader p span {
   color: var(--color-gray);
   font-size: 1.2rem;
-  display: block;
+
 }
 
-.activities__boxContent {
-  margin-left: 4.2rem;
-}
+
 
 .activities__boxContent {
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column; /* Ensure text aligns properly */
+  align-items: flex-start; /* Aligns text to the left */
+  justify-content: center;
 }
 
 .activities__boxContent a:hover {
@@ -776,11 +778,12 @@ a {
 
 .activities__boxRoomContent {
   background: var(--color-bg);
-  padding: 1rem;
   border-radius: 5px;
   margin-top: 1rem;
-  margin-left: -4.2rem;
+  padding: 0.5rem; /* Optional: Add padding for better spacing */
+  width: 100%; /* Ensure it spans full width */
 }
+
 
 .roomListRoom__actions svg {
   fill: var(--color-light-gray);
@@ -1162,3 +1165,5 @@ a {
   color: var(--color-main);
   font-weight: 1.4rem;
 }
+
+

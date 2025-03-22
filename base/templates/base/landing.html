@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadTheRoom</title>
+    <link rel="stylesheet" href="{% static 'styles/landing.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="nav-title">ReadTheRoom</h1>
+    </nav>
+
+    <div class="landing-container">
+        <p class="tagline">Engage. Discuss. Connect.</p>
+        <div class="button-container">
+            <a href="{% url 'login' %}" class="btn">Login</a>
+            <a href="{% url 'register' %}" class="btn">Register</a>
+        </div>
+    </div>
+</body>
+</html>

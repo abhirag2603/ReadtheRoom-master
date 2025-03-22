@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+    --color-main: #ffeb3b;
+    --color-main-light: #ffff72;
+    --color-dark: #212121;
+    --color-dark-medium: #424242;
+    --color-dark-light: #616161;
+    --color-light: #bdbdbd;
+    --color-gray: #757575;
+    --color-light-gray: #9e9e9e;
+    --color-bg: #121212;
+    --color-success: #5dd693;
+    --color-error: #fc4b0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-main);
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-dark);
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-main);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: var(--color-main-light);
+}
+
+/* Landing Page Container */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #FFA500;
+    font-weight: 500;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: var(--color-main);
+    color: var(--color-dark);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
