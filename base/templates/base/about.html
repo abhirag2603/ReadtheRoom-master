@@ -89,9 +89,7 @@
                   <div class="thread__top">
                     <div class="thread__author">
                       <a href="{% url 'user-profile' message.user.id %}" class="thread__authorInfo">
-                        <div class="avatar avatar--small">
-                          <img src="{% static 'images/aryan.jpg' %}" />
-                        </div>
+                       
                         <span>{{message.user.username}}</span>
                       </a>
                       <span class="thread__date">{{message.created|timesince}} ago</span>
@@ -137,9 +135,7 @@
           <div class="participants__list scroll">
             {% for user in participants %}
             <a href="{% url 'user-profile' user.id %}" class="participant">
-              <div class="avatar avatar--medium">
-                <img src="{% static 'images/aryan.jpg' %}" />
-              </div>
+             
               <p>
                {{ user.username }}
                 <span>@{{ user.username}}</span>
